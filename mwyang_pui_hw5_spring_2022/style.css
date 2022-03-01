@@ -3,7 +3,7 @@ body {
     margin: 0;
     color:  black;
     background-color: #99BBFF;
-    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -14,38 +14,145 @@ header {
     background-color: white;
     color: black;
     font-family: 'Roboto Slab', serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top:  10px;
+}
 
+#bakery-logo {
+    text-align:  left;
+    width: 800px;
+}
+
+#search{
+    text-align:  right;
+}
+
+#cart{
+    text-align:  left;
 }
 
 h1 {
     margin: 0;
+    display:  none;
 }
 
-/*********** LISTS ************/
-#todo-lists {
-    margin: 0 auto;
-    width: 80%;
-    padding-top: 10px;
+/*********** BODY ************/
+
+#item{
+    padding: 50px;
+    text-align:  center;
 }
 
-.list {
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #eeeeee;
-    border: 1px solid #cccccc;
-
+.container {
+  position: relative;
+  width: 50%;
+}
+.text {
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 100;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: lightgray;
 }
 
-.list-title {
-    margin-left: 20px;
+.container:hover .overlay {
+  opacity: 0.8;
 }
+
+h2 {
+    padding-top: 100px;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+/*********** LINKS ************/
+
 
 header a {
-    color: gold;
+    color: black;
     text-decoration: none;
+    padding-left: 100px;
+    font-size: 24px;
 }
 
-.list a {
-    color: teal;
-    text-decoration: none;
+
+/*********** GRIDS/TABLE ************/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#product-grid {
+    padding-top: 100px;
+    padding-left: 500px;
+    padding-right: 500px;
+    text-align: center;
+    table-layout: fixed;
+}
+#product-info {
+    padding-top: 100px;
+    padding-left: 500px;
+    padding-right: 500px;
+    text-align: center;
+}
+#more-details {
+    padding-top: 10px;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+#instructions {
+    text-align:  center;
+    color:  white;
+}
+#cart-contents {
+    padding-left: 500px;
+    padding-right: 500px;
+    text-align: center;
+    font-size: 16px;
+}
+#about-us{
+    padding-left: 500px;
+    padding-right: 500px;
+    text-align: left;
+    font-size: 16px;
+}
+#contact-us {
+    padding-left: 500px;
+    padding-right: 500px;
+    text-align: left;
+    font-size: 16px;
+}
+th #content-contents{
+    font-size: 20px;
+}
+th {
+    width: 200px;
+    padding:  15px;
+    font-size: 36px;
+    text-align: left;
+}
+td {
+    background-color: lightgray;
+    border-radius: 10px;
+    padding:  15px;
+    width: 200px;
+    text-align: center;
+}
+#empty-td {
+    background-color: transparent;
 }
